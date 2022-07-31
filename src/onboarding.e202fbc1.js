@@ -1,47 +1,32 @@
-function e(e){return e&&e.__esModule?e.default:e}function t(e,t,n,r){Object.defineProperty(e,t,{get:n,set:r,enumerable:!0,configurable:!0})}var n="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{},r={},i={},l=n.parcelRequirea886;null==l&&((l=function(e){if(e in r)return r[e].exports;if(e in i){var t=i[e];delete i[e];var n={id:e,exports:{}};return r[e]=n,t.call(n.exports,n,n.exports),n.exports}var l=new Error("Cannot find module '"+e+"'");throw l.code="MODULE_NOT_FOUND",l}).register=function(e,t){i[e]=t},n.parcelRequirea886=l),l.register("9P0Mo",(function(n,r){t(n.exports,"FullPageHeader",(function(){return h}));var i=l("aZikt"),o=l("hHMPk"),a=l("7Qmuu"),s=l("hJDxl"),d=l("g7X40"),u=l("6oEu9");const p=o.default.header`
-  display: flex;
-  width: 100%;
-  padding: 30px 40px;
-  justify-content: space-between;
+(function(define){var __define;"function"==typeof define&&define.amd&&(__define=define,define=null);function e(e){return e&&e.__esModule?e.default:e}function t(e,t,r,n){Object.defineProperty(e,t,{get:r,set:n,enumerable:!0,configurable:!0})}var r="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{},n={},o={},i=r.parcelRequirea886;null==i&&((i=function(e){if(e in n)return n[e].exports;if(e in o){var t=o[e];delete o[e];var r={id:e,exports:{}};return n[e]=r,t.call(r.exports,r,r.exports),r.exports}var i=new Error("Cannot find module '"+e+"'");throw i.code="MODULE_NOT_FOUND",i}).register=function(e,t){o[e]=t},r.parcelRequirea886=i),i.register("9P0Mo",(function(r,n){t(r.exports,"FullPageHeader",(function(){return h}));var o=i("aZikt"),l=i("hHMPk"),a=i("7Qmuu"),u=i("6oEu9"),f=i("hJDxl"),s=i("g7X40"),p=i("cweFb");const c=l.default.header`
   position: absolute;
   top: 0;
+  right: 0;
   left: 0;
-`,c=o.default.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+`,d=l.default(p.Row).attrs({width:"auto",padding:"10px 20px"})`
   background: #252525;
-  height: 40px;
-  width: 181px;
   border-radius: 100px;
-  ${d.LogoText} {
-    margin-right: 6px;
-    margin-left: 10px;
-  }
-`,f=o.default.div`
-  display: flex;
-  align-items: baseline;
-`,g=o.default.a`
-  padding: 10px 0px;
+`,g=l.default.a`
   text-decoration: none;
   display: flex;
   align-items: center;
-  > * {
-    margin-left: 8px;
-  }
   svg {
     fill: #aaa;
   }
   &:hover {
-    color: white;
+    color: #fff;
     svg {
-      fill: white;
+      fill: #fff;
     }
     p {
-      color: white;
+      color: #fff;
     }
   }
-`,h=()=>{const{t:t}=a.useTranslation();return e(i).createElement(p,null,e(i).createElement(c,null,e(i).createElement("img",{src:"/grey_logo.png",width:"22px"}),e(i).createElement(f,null,e(i).createElement(d.LogoText,{size:16,lineHeight:18},"Phantom"),e(i).createElement(d.Text,{size:15,lineHeight:18,color:"#8A81F8",weight:500},t("fullPageHeaderBeta")))),e(i).createElement(g,{href:u.PHANTOM_SUPPORT_URL,rel:"noopener",target:"_blank"},e(i).createElement(s.HelpIcon,null),e(i).createElement(d.Text,{color:"#AAA",size:16,weight:500,hoverColor:"white"},t("fullPageHeaderHelp"))))}})),l.register("hoJun",(function(e,n){t(e.exports,"ChevronCircle",(function(){return o}));var r=l("hHMPk"),i=l("8FNEt");const o=r.default(i.Circle)`
+`,h=()=>{const{t:t}=a.useTranslation();return e(o).createElement(c,null,e(o).createElement(d,null,e(o).createElement("img",{src:"/grey_logo.png",alt:"Phantom",width:"22px"}),e(o).createElement(s.LogoText,{size:16,lineHeight:18,margin:"0 0 0 10px"},"Phantom")),e(o).createElement(g,{href:u.PHANTOM_SUPPORT_URL,rel:"noopener",target:"_blank"},e(o).createElement(f.HelpIcon,null),e(o).createElement(s.Text,{color:"#AAA",size:16,weight:500,hoverColor:"#FFF",margin:"0 0 0 8px"},t("fullPageHeaderHelp"))))}})),i.register("hoJun",(function(e,r){t(e.exports,"ChevronCircle",(function(){return l}));var n=i("hHMPk"),o=i("8FNEt");const l=n.default(o.Circle)`
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -60,4 +45,4 @@ function e(e){return e&&e.__esModule?e.default:e}function t(e,t,n,r){Object.defi
     ${e=>e.top?`top: ${e.top}px;`:""}
     ${e=>e.right?`right: ${e.right}px;`:""}
   }
-`}));
+`}));define=__define;})(window.define);
