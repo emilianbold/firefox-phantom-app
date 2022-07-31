@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Phantom",
   "description": "A crypto wallet reimagined for DeFi & NFTs",
-  "version": "22.3.29",
+  "version": "22.4.26",
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Phantom"
@@ -13,7 +13,7 @@
     "128": "icon128.png",
     "512": "icon512.png"
   },
-  "content_security_policy": "script-src 'self' 'sha256-BehuDnuH3YyTsN2PUsSwAsNnRRwCkXzEj1AUbA1P9xQ=' 'wasm-eval'; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'wasm-eval'; object-src 'self'",
   "permissions": [
     "storage",
     "activeTab",
